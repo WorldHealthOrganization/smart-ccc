@@ -269,7 +269,8 @@
         "input/mapping/",
         "input/pagecontent/",
         "input/resources/",
-        "fsh-generated/"
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
       ]
     }
   }
