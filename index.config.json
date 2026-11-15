@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "050de3b8130e96cf39dada434e5edacb68a6163e",
+          "ref": "dfabd22d6798c65917d720072af95bcaa0fce465",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,8 +42,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "050de3b8130e96cf39dada434e5edacb68a6163e",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "dfabd22d6798c65917d720072af95bcaa0fce465",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -54,7 +54,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "914723bc595a5786b4340549819658c5c0af1bbb",
+          "ref": "6daa42c482bcabda42ee590d5db115f6f4e7e64f",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -79,8 +79,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "914723bc595a5786b4340549819658c5c0af1bbb",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "6daa42c482bcabda42ee590d5db115f6f4e7e64f",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -91,7 +91,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "5bf5ff9576650c132fb541e3d477e1feab447159",
+          "ref": "42d8cdb385e34c5bca7b46a0955d8295f1eb1455",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,8 +101,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "5bf5ff9576650c132fb541e3d477e1feab447159",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "42d8cdb385e34c5bca7b46a0955d8295f1eb1455",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -113,7 +113,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
+          "ref": "f72b6cde165d99285bc8f9746b1d70393e758705",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,8 +129,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "aceae1937c9af784c8c0af6a60a1d7192cdd5e2a",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "f72b6cde165d99285bc8f9746b1d70393e758705",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -141,7 +141,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
+          "ref": "562a227fd8e7f49d7a0350cdf3c2aea6af29afba",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,8 +157,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "2e959408e5a8167460fb9566933be299a17f0d8d",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "562a227fd8e7f49d7a0350cdf3c2aea6af29afba",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
+          "ref": "6d272fac1ea08f5d22d3fd68bf84baaf8f73b83a",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,8 +182,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-15",
-              "ref": "39ee6af57dc09d2f25d1caf89ee4484d3df24327",
-              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+              "ref": "6d272fac1ea08f5d22d3fd68bf84baaf8f73b83a",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
         }
