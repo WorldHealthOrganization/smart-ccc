@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "690717a7c6f1b2c8fff2ce757a8ee3bf9e89ad4d",
+          "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,8 +42,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "690717a7c6f1b2c8fff2ce757a8ee3bf9e89ad4d",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
+              "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
         }
@@ -91,7 +91,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "2c8e08fc5e6c6569e608167707bbe2deab8c7828",
+          "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -101,8 +101,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "2c8e08fc5e6c6569e608167707bbe2deab8c7828",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
+              "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
         }
@@ -113,7 +113,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "38125f11642b201b444a2c605848805ffd703955",
+          "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -129,8 +129,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "38125f11642b201b444a2c605848805ffd703955",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
+              "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
         }
@@ -141,7 +141,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "618d620f99a05e1224ff95ac42fd0a94ce1b2417",
+          "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -157,8 +157,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "618d620f99a05e1224ff95ac42fd0a94ce1b2417",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
+              "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
         }
@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "f027203d3b1bb0b6cd152a7a317a453f6517ac5c",
+          "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,8 +182,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "f027203d3b1bb0b6cd152a7a317a453f6517ac5c",
-              "evidence": "litlfred 2026-11-16: merge-and-repin window to 19:01Z (owner card 06:36Z); re-pin cascade wave 3"
+              "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
         }
