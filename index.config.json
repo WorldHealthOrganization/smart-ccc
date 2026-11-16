@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "dfabd22d6798c65917d720072af95bcaa0fce465",
+          "ref": "fc704c41e4329f6eeafcc5a2fa89747b486f4cb5",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -41,8 +41,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "dfabd22d6798c65917d720072af95bcaa0fce465",
+              "on": "2026-11-16",
+              "ref": "fc704c41e4329f6eeafcc5a2fa89747b486f4cb5",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
@@ -54,7 +54,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/who-iris",
-          "ref": "6daa42c482bcabda42ee590d5db115f6f4e7e64f",
+          "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
           "overrides": {
             "who-iris": {
               "whole": true
@@ -78,8 +78,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "6daa42c482bcabda42ee590d5db115f6f4e7e64f",
+              "on": "2026-11-16",
+              "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
@@ -91,7 +91,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/fhir-harness",
-          "ref": "42d8cdb385e34c5bca7b46a0955d8295f1eb1455",
+          "ref": "08eda09f6909b4eed6634032b93c6e600e015ea9",
           "overrides": {
             "fhir-harness": {
               "whole": true
@@ -100,8 +100,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "42d8cdb385e34c5bca7b46a0955d8295f1eb1455",
+              "on": "2026-11-16",
+              "ref": "08eda09f6909b4eed6634032b93c6e600e015ea9",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
@@ -113,7 +113,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/folio-assistant-core",
-          "ref": "f72b6cde165d99285bc8f9746b1d70393e758705",
+          "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5",
           "overrides": {
             "folio-assistant-core": {
               "whole": true
@@ -128,8 +128,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "f72b6cde165d99285bc8f9746b1d70393e758705",
+              "on": "2026-11-16",
+              "ref": "c17d92bba438d8b501a9fd51d6252802602d70c5",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
@@ -141,7 +141,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness",
-          "ref": "562a227fd8e7f49d7a0350cdf3c2aea6af29afba",
+          "ref": "32bd4fe9d8b4529c97c9dbfd323c46cc5eddff96",
           "overrides": {
             "cat-harness": {
               "whole": true
@@ -156,8 +156,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "562a227fd8e7f49d7a0350cdf3c2aea6af29afba",
+              "on": "2026-11-16",
+              "ref": "32bd4fe9d8b4529c97c9dbfd323c46cc5eddff96",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "6d272fac1ea08f5d22d3fd68bf84baaf8f73b83a",
+          "ref": "418672b09492c6c742a4f9bd09038288a29edfab",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -181,8 +181,8 @@
           "trust": {
             "consent": {
               "by": "litlfred",
-              "on": "2026-11-15",
-              "ref": "6d272fac1ea08f5d22d3fd68bf84baaf8f73b83a",
+              "on": "2026-11-16",
+              "ref": "418672b09492c6c742a4f9bd09038288a29edfab",
               "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
             }
           }
