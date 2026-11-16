@@ -6,7 +6,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/smart-base",
-          "ref": "bdf771ec77f1a93f0365a35237cbec67f4b36e66",
+          "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
           "overrides": {
             "smart-base": {
               "path": "smart-base",
@@ -42,8 +42,8 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "bdf771ec77f1a93f0365a35237cbec67f4b36e66",
-              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+              "ref": "ebf19f235bd14081e8a7c73c09afb4fec5813728",
+              "evidence": "litlfred 2026-11-16T06:36:48Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9GbDZs1PWPLeRr9h1WjnESP): \"Yes, +12 hours\" — extend the repin and merge window past 07:01Z to 2026-11-16T19:01Z, to merge smart-base#430 and re-pin every leaf and folio-assistant onto it"
             }
           }
         }
