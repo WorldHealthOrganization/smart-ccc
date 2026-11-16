@@ -169,7 +169,7 @@
       "source": {
         "remote": {
           "repository": "litlfred/cat-harness-tools",
-          "ref": "f888b0c95de8f7b38e4ebc8a5b76c858aa9ef887",
+          "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
           "overrides": {
             "cat-harness-tools": {
               "whole": true
@@ -182,7 +182,7 @@
             "consent": {
               "by": "litlfred",
               "on": "2026-11-16",
-              "ref": "f888b0c95de8f7b38e4ebc8a5b76c858aa9ef887",
+              "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
               "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
             }
           }
