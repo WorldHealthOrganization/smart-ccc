@@ -1,0 +1,277 @@
+{
+  "$schema": "folio-index-config/v1",
+  "instances": [
+    {
+      "name": "smart-base",
+      "source": {
+        "remote": {
+          "repository": "litlfred/smart-base",
+          "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
+          "overrides": {
+            "smart-base": {
+              "path": "smart-base",
+              "directories": [
+                "smart-base-qa-checkers",
+                "smart-base-block-kinds",
+                "smart-base-content-adapters",
+                "smart-base-translations",
+                "library",
+                "methodologies",
+                "collab",
+                "smart-base-artifact-index",
+                "tools",
+                "smart-base-themes",
+                "smart-base-docs",
+                "smart-base-document-kinds",
+                "smart-base-findings",
+                "smart-base-external-schemas",
+                "smart-base-platform",
+                "smart-base-schemas",
+                "smart-base-content",
+                "smart-base-scripts",
+                "smart-base-skills",
+                "smart-base-scenarios",
+                "smart-base-code-lists",
+                "smart-base-typologies",
+                "smart-base-validators"
+              ],
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "9dd5c6fa6f89ed6b54e1ee0a584dc48bf9e4cbf0",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "who-iris",
+      "source": {
+        "remote": {
+          "repository": "litlfred/who-iris",
+          "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
+          "overrides": {
+            "who-iris": {
+              "whole": true
+            },
+            "folio-assistant-core": {
+              "skip": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "f7290776b30cf851a3174384917b1dcc3890991b",
+              "evidence": "litlfred 2026-11-15T19:01:19Z, card in thread cmsg_017WNUkNK8kdDziPK58Pv6G9HtujCofFVVPVPppfDRTSNR (decision cmsg_017WNUkNK8kdDziPK58Pv6G9L7BityLCAN5rXMwLd53Kkn): \"Yes, +12 hours\" — extend the repin and merge window so the stable point can finish (every pin to its main), to 2026-11-16T07:01Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "fhir-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/fhir-harness",
+          "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
+          "overrides": {
+            "fhir-harness": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "1529a1914ad4215856f15203fb19be02e3bfb3cb",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "folio-assistant-core",
+      "source": {
+        "remote": {
+          "repository": "litlfred/folio-assistant-core",
+          "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+          "overrides": {
+            "folio-assistant-core": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            },
+            "cat-harness-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "b699993ab043af4154c4f4c4e51c66224d0dbb9e",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness",
+          "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
+          "overrides": {
+            "cat-harness": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            },
+            "bootstrap-tools": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "dcd503fa1dffd4bf5982602f44305ec4ec9003b2",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cat-harness-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/cat-harness-tools",
+          "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
+          "overrides": {
+            "cat-harness-tools": {
+              "whole": true
+            },
+            "cat-harness": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-16",
+              "ref": "8dbf8023d8563ea023be0d8c153f7a0d39e888c0",
+              "evidence": "litlfred 2026-11-16: merge-and-repin window to 23:17Z (owner 17:17Z in session session_01EucfRnjwjC8CPYgVnsFuHS, 'merge window 6 hrs'); re-pin cascade wave 3 catch-up"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap",
+          "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+          "overrides": {
+            "bootstrap": {
+              "whole": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-15",
+              "ref": "7db8457701ebb9b99284d639128f3c82ad4fc6ea",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bootstrap-tools",
+      "source": {
+        "remote": {
+          "repository": "litlfred/bootstrap-tools",
+          "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+          "overrides": {
+            "bootstrap-tools": {
+              "whole": true
+            },
+            "bootstrap": {
+              "skip": true
+            }
+          },
+          "trust": {
+            "consent": {
+              "by": "litlfred",
+              "on": "2026-11-15",
+              "ref": "174a567db34db10b007a45b13f960f218a6b04f5",
+              "evidence": "litlfred, 2026-11-15 12:12Z, project thread chat: 'make sure revisions are aligned with current deciisons and infra' (reviving the opt-in collab enable drafts, after card 'A. Revive, close, ask', 12:09Z): hand re-pin of every layer to main, Claude Code session https://claude.ai/code/session_01Qmmkt9PKt17La22a63e6zg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "smart-ccc",
+      "source": {
+        "local": {
+          "at": "."
+        }
+      }
+    }
+  ],
+  "site": {
+    "landing": "smart-base"
+  },
+  "enableSubgraphs": [
+    "folio-assistant-core.collab",
+    "smart-base.collab",
+    "fhir-harness.collab",
+    "smart-base.L2-collab",
+    "smart-base.L3-collab"
+  ],
+  "contentTypes": {
+    "ig": {
+      "_comment": "What this repository is, per the content types its layers register: fhir-harness's `ig` content type. `include` is everything the harness reads in this repository, and nothing else is read: every `input/` entry and the IG's own build files. Set up as litlfred/smart-hiv's (owner card Q-JTD-2 A, 2026-11-10).",
+      "include": [
+        "sushi-config.yaml",
+        "ig.ini",
+        "input/cql/",
+        "input/ext_ig/",
+        "input/fsh/",
+        "input/includes/",
+        "input/l2/",
+        "input/mapping/",
+        "input/pagecontent/",
+        "input/resources/",
+        "fsh-generated/",
+        "qa/ig-content-qa.json"
+      ]
+    }
+  }
+}

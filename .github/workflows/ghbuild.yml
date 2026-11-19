@@ -9,12 +9,8 @@ name: GitHub Pages build
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events for any main branch
-  push:
-    branches-ignore:    
-      - 'gh-pages'
-  pull_request:
-
+  # By hand only (owner decision, 2026-10-06; as on smart-hiv): the harnessed
+  # site (site-publish.yml) owns gh-pages, so no push or pull request runs this.
   workflow_dispatch:
 
 jobs:
