@@ -1,0 +1,500 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://smart.who.int/ccc/Questionnaire/Ccc.b22.breastfeeding> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Ccc.b22.breastfeeding"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire Ccc.b22.breastfeeding</b></p><a name=\"Ccc.b22.breastfeeding\"> </a><a name=\"hcCcc.b22.breastfeeding\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html\">SDC Base Questionnaire</a></p></div><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other attributes of the item\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> Ccc.B22.BreastFeeding</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">https://smart.who.int/ccc/Questionnaire/Ccc.b22.breastfeeding#0.1.0</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.AgeInMonths\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-integer.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"integer\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>AgeInMonths</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Age</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-integer\">integer</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" id=\"item.Ccc.B22.DE27\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE27</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Breastfeeding Assessment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" id=\"item.Ccc.B22.DE27-help\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / Ccc.B22.DE27 / </span>Ccc.B22.DE27-help</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">If a breastfeeding assessment and an Oral Fluid test is recommended for a child that is only breastfed then a pop up is required to ensure that the health care worker observes the signs for both and provides results for both tests.</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE41\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE41</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">null</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Options: <a href=\"#opt-item.Ccc.B22.DE41\">1 option</a></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE28\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE28</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Breastfed in the previous hour</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE29\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE29</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Mother able to wait until young infant is willing to breastfeed again</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" id=\"item.Ccc.B22.DE30\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE30</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Mother reports difficulty breastfeeding</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" id=\"item.Ccc.B22.DE30-help\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / Ccc.B22.DE30 / </span>Ccc.B22.DE30-help</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Provide information on what difficulty breastfeeding may include, such as: the infant feeds too often, doesn&amp;#8217;t feed often enough, she does not have enough milk, her nipples are sore, or she has flat or inverted nipples. After feeds, the infant may be restless, cry or try to suckle again, or continue to breastfeed for a long time.</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE31\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE31</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Chin Touching Breast</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE32\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE32</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Mouth Wide Open</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE33\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE33</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Lower Lip Turned Outwards</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE34\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE34</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">More Areola Visible above than below the Mouth</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE35\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE35</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Slow Deep Sucks, Sometimes Pausing</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE36\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"string\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE36</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Breastfeeding Assessment Results</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"\"/></a><img src=\"icon-qi-readonly.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE37\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE37</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Not well Attached to Breast</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE38\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE38</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Good Attachment</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE39\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE39</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Not Sucking Effectively</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE40\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE40</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Sucking Effectively</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE42\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE42</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Difficulty Breastfeeding Reported</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"\"/></a><img src=\"icon-qi-readonly.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE44\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>Ccc.B22.DE44</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Difficulty Breastfeeding Observed</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.item.readOnly\" title=\"Is Read Only\"><img src=\"icon-qi-readonly.png\" alt=\"\"/></a><img src=\"icon-qi-readonly.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" id=\"item.timestamp\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-datetime.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"dateTime\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.BreastFeeding / </span>timestamp</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">null</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr><td colspan=\"6\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.Ccc.B22.DE41\"> </a><p><b>Answer options for Ccc.B22.DE41 </b></p><ul><li style=\"font-size: 11px\">null#Ccc.B22.DE41 (\"Breastfeeding Assessment Not Possible\")</li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "shareable" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "computable" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "publishable" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel" ] ;
+     fhir:Extension.valueCode [ fhir:value "structured" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "https://smart.who.int/ccc/StructureMap/Ccc.b22.breastfeeding" ;
+       fhir:link <https://smart.who.int/ccc/StructureMap/Ccc.b22.breastfeeding>
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-library" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "https://smart.who.int/ccc/Library/Cccb22breastfeeding" ;
+       fhir:link <https://smart.who.int/ccc/Library/Cccb22breastfeeding>
+     ]
+  ] ;
+  fhir:Questionnaire.url [ fhir:value "https://smart.who.int/ccc/Questionnaire/Ccc.b22.breastfeeding"] ;
+  fhir:Questionnaire.version [ fhir:value "0.1.0"] ;
+  fhir:Questionnaire.name [ fhir:value "Ccc.B22.BreastFeeding"] ;
+  fhir:Questionnaire.title [ fhir:value "Ccc.B22.BreastFeeding"] ;
+  fhir:Questionnaire.status [ fhir:value "active"] ;
+  fhir:Questionnaire.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient" ;
+     fhir:index 0
+  ] ;
+  fhir:Questionnaire.date [ fhir:value "2026-11-19T07:52:22+00:00"^^xsd:dateTime] ;
+  fhir:Questionnaire.publisher [ fhir:value "World Health Organization (WHO)"] ;
+  fhir:Questionnaire.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "World Health Organization (WHO)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ] ;
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ] ;
+  fhir:Questionnaire.item [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "ageinmonths" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "AgeInMonths" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Age" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "integer" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 1 ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE27" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Breastfeeding Assessment" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "display" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ] ;
+             fhir:Coding.code [ fhir:value "help" ]
+           ]
+         ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE27-help" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "If a breastfeeding assessment and an Oral Fluid test is recommended for a child that is only breastfed then a pop up is required to ensure that the health care worker observes the signs for both and provides results for both tests." ] ;
+       fhir:Questionnaire.item.type [ fhir:value "display" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ] ;
+           fhir:Coding.code [ fhir:value "check-box" ] ;
+           fhir:Coding.display [ fhir:value "Check-box" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Check-box" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE41" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE41" ] ;
+         fhir:Coding.display [ fhir:value "Breastfeeding Assessment Not Possible" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE28" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Breastfed in the previous hour" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE28').answer.first().value=true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE29" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Mother able to wait until young infant is willing to breastfeed again" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 5 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE30" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Mother reports difficulty breastfeeding" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ] ;
+             fhir:Coding.code [ fhir:value "help" ]
+           ]
+         ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE30-help" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "Provide information on what difficulty breastfeeding may include, such as: the infant feeds too often, doesn&#8217;t feed often enough, she does not have enough milk, her nipples are sore, or she has flat or inverted nipples. After feeds, the infant may be restless, cry or try to suckle again, or continue to breastfeed for a long time." ] ;
+       fhir:Questionnaire.item.type [ fhir:value "display" ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE31" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Chin Touching Breast" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 7 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE32" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Mouth Wide Open" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 8 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE33" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Lower Lip Turned Outwards" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 9 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE34" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "More Areola Visible above than below the Mouth" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 10 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE41').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE35" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Slow Deep Sucks, Sometimes Pausing" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 11 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE40').answer.first().exists() and %resource.repeat(item).where(linkId='Ccc.B22.DE35').answer.first().exists() and %resource.repeat(item).where(linkId='Ccc.B22.DE31').answer.first().exists() and %resource.repeat(item).where(linkId='Ccc.B22.DE32').answer.first().exists() and %resource.repeat(item).where(linkId='Ccc.B22.DE33').answer.first().exists()  and %resource.repeat(item).where(linkId='Ccc.B22.DE34').answer.first().exists()" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "iif(%resource.repeat(item).where(linkId='Ccc.B22.DE37').answer.first().value=true,'Not well Attached to Breast',iif(  %resource.repeat(item).where(linkId='Ccc.B22.DE38').answer.first().value=true , 'Good Attachment',iif(  %resource.repeat(item).where(linkId='Ccc.B22.DE39').answer.first().value=true,'Not Sucking Effectively',iif( %resource.repeat(item).where(linkId='Ccc.B22.DE40').answer.first().value=true, 'Sucking Effectively',{}))))" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE36" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Breastfeeding Assessment Results" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "string" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.readOnly [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 12 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE31').answer.first().value = false or %resource.repeat(item).where(linkId='Ccc.B22.DE32').answer.first().value = false or %resource.repeat(item).where(linkId='Ccc.B22.DE33').answer.first().value = false or %resource.repeat(item).where(linkId='Ccc.B22.DE34').answer.first().value = false" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE37" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Not well Attached to Breast" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 13 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE31').answer.first().value = true and %resource.repeat(item).where(linkId='Ccc.B22.DE32').answer.first().value = true and %resource.repeat(item).where(linkId='Ccc.B22.DE33').answer.first().value = true and %resource.repeat(item).where(linkId='Ccc.B22.DE34').answer.first().value = true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE38" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Good Attachment" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 14 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE35').answer.first().value = false" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE39" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Not Sucking Effectively" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 15 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE35').answer.first().value = true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE40" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Sucking Effectively" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 16 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE30').answer.first().value = true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE42" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Difficulty Breastfeeding Reported" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.readOnly [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 17 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE39').answer.first().value = true or %resource.repeat(item).where(linkId='Ccc.B22.DE37').answer.first().value =true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE44" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Difficulty Breastfeeding Observed" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.readOnly [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 18 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "now()" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "timestamp" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "dateTime" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://smart.who.int/ccc/Questionnaire/Ccc.b22.breastfeeding.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

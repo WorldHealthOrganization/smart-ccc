@@ -1,0 +1,165 @@
+{
+  "resourceType": "Library",
+  "id": "Ccczscore",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-8606058a-2436-451f-ba65-013fd6d8a459.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/*\n@author: Patrick Delcroix\n@description: This library is part of the project EmCare\n*/\nlibrary emcarezscore version '1.0.1.rc12.build.156'\nusing FHIR version '4.0.1'\ninclude FHIRHelpers version '4.0.1' called FHIRHelpers \ninclude emcarebase version '1.0.1.rc12.build.156' called Base\ninclude WeightForAge version '1.0.0' called wfa\ninclude WeightForLength version '1.0.0' called wfl\ninclude WeightForHeight version '1.0.0' called wfh\n\n\n\n//codesystem &quot;EmCare&quot; : 'https://fhir.dk.swisstph-mis.ch/matchbox/fhir/CodeSystem/emcare-custom-codes'\n\n\n\n//code &quot;Weight&quot;: 'EmCare.B6.DE06' from &quot;EmCare&quot; display 'Weight'\n//code &quot;Estimated Weight&quot;: 'EmCare.B6.DE08' from &quot;EmCare&quot; display 'Estimated Weight'\n//code &quot;MUAC&quot;: 'EmCare.B6.DE17' from &quot;EmCare&quot; display 'MUAC'\n//code &quot;Length&quot;: 'EmCare.B6.DE12' from &quot;EmCare&quot; display 'Length'\n//code &quot;Height&quot;: 'EmCare.B6.DE09' from &quot;EmCare&quot; display 'Height'\n\nparameter &quot;encounterid&quot; String\n\ncontext Patient\n\ndefine &quot;Weight&quot;:\n  Base.coding('EmCare.B6.DE06')\ndefine &quot;Estimated Weight&quot;:\n  Base.coding('EmCare.B6.DE08')\ndefine &quot;MUAC&quot;:\n  Base.coding('EmCare.B6.DE17')\ndefine &quot;Length&quot;:\n  Base.coding('EmCare.B6.DE12')\ndefine &quot;Height&quot;:\n  Base.coding('EmCare.B6.DE09')\ndefine &quot;Visually assess&quot;:\n  Base.coding('EmCare.B6.DE18')\ndefine &quot;Underweight&quot;:\n  Base.coding('EmCare.B6.DE20') \ndefine &quot;Severely Underweight&quot;:\n  Base.coding('EmCare.B6.DE21') \n\n/* pastweight : Previous Weight*/\ndefine &quot;pastweight&quot;:\n    if AgeInMonths()' at line 300 column 22</b></p></div>"
+  },
+  "url": "https://smart.who.int/ccc/Library/Ccczscore",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "CccZScore"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "Ccczscore",
+  "title": "Ccc.Z.Score",
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-11-19T07:52:22+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "name": "World Health Organization (WHO)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://fhir.org/guides/who/anc-cds/Library/FHIRHelpers"
+    },
+    {
+      "type": "depends-on",
+      "resource": "https://smart.who.int/ccc/Library/Cccbase"
+    },
+    {
+      "type": "depends-on",
+      "resource": "https://smart.who.int/ccc/Library/weightforage"
+    },
+    {
+      "type": "depends-on",
+      "resource": "https://smart.who.int/ccc/Library/anthrobase"
+    },
+    {
+      "type": "depends-on",
+      "resource": "https://smart.who.int/ccc/Library/weightforlength"
+    },
+    {
+      "type": "depends-on",
+      "resource": "https://smart.who.int/ccc/Library/weightforheight"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "encounter",
+      "use": "in",
+      "type": "Encounter"
+    },
+    {
+      "name": "pastweight",
+      "use": "out",
+      "type": "decimal"
+    },
+    {
+      "name": "patientsex",
+      "use": "out",
+      "type": "string"
+    },
+    {
+      "name": "ageatpastweight",
+      "use": "out",
+      "type": "integer"
+    },
+    {
+      "name": "pastweightzscore",
+      "use": "out",
+      "type": "decimal"
+    },
+    {
+      "name": "pastweightactualised",
+      "use": "out",
+      "type": "decimal"
+    },
+    {
+      "name": "WAZ",
+      "use": "out",
+      "type": "decimal"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "type": "Patient",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "type": "Encounter",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Encounter"
+      ]
+    },
+    {
+      "type": "Observation",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Observation"
+      ],
+      "mustSupport": [
+        "code",
+        "encounter.reference",
+        "encounter",
+        "value",
+        "status"
+      ],
+      "codeFilter": [
+        {
+          "path": "code",
+          "code": [
+            {
+              "code": "Ccc.B6.DE06"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-Ccczscore.cql",
+      "contentType": "text/cql",
+      "url": "Library-Ccczscore.cql"
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://smart.who.int/ccc/Library/Cccb23classification> a fhir:Library ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Cccb23classification"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Ccc.B23.Classification</td>\n        </tr>\n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">Cccb23classification</td>\n        </tr>\n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"Library-Cccb23classification.html\">Ccc.B23.Classification</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\">\n                <b>\n                    \n                        Official\n                    \n                </b>\n            </th>\n            <td style=\"padding-left: 4px;\">\n                \n                <p style=\"margin-bottom: 5px;\">\n                    <span>Ccc.b23.classification</span>\n                </p>\n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://hl7.org/fhir/R4/valueset-library-type.html\">http://hl7.org/fhir/ValueSet/library-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>logic-library</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-11-19 07:52:22+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">World Health Organization (WHO)</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Jurisdiction: </b></th>\n            <td style=\"padding-left: 4px;\">001</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n          <th scope=\"row\"><b>Parameters: </b></th>\n          <td style=\"padding-left: 4px;\">\n            <table class=\"grid-dict\">\n              <tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Min</b></th><th><b>Max</b></th><th><b>In/Out</b></th></tr>\n              \n                <tr><th>dl-xxxx</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b6.de06</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>weight</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b6.de08-old</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>profile weight</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b6.de08</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>estimated weight</th><th>Quantity</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-07</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>severe pneumonia or very severe disease</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de04</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>the client has severe pneumonia or very severe disease with low oxygen saturation (spo2 &lt; 90%)</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de05</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>the client has severe pneumonia or very severe disease with wheezing</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de08</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>measles in last 3 months</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-14</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-19</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-23-30</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-24-32</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-30</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-31</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-32</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-33</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-01</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-05</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-06</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-07</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-09</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-73</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-74-76</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-74</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-75</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-76</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-11-12</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-11</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-12</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de32a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-79</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-34</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-03</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de26a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-26</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-16-66</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-16-67a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-67a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-16-67</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-67</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-16</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-66</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-69-70</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-69</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-68-17</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-68</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-17</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-71</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-109</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-110</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-111</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-80</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-83</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de36</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-81</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-82</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-88</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-90</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de43a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-91</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-93</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de46a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de46</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-95</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de48</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de48a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-98</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de50</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de50a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-99</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de52a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-100</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de53a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-102</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de55</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-103</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-104</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de57a</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de57b</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de57c</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-105</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-106</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>Ccc.b23.de60</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-g-cl1-108</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-28</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-33</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>dl-i-cl1-34</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n            </table>\n          </td>\n        </tr>\n        \n\n        \n\n        \n        \n        \n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:Library.url [ fhir:value "https://smart.who.int/ccc/Library/Cccb23classification"] ;
+  fhir:Library.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.value [ fhir:value "Ccc.b23.classification" ]
+  ] ;
+  fhir:Library.version [ fhir:value "0.1.0"] ;
+  fhir:Library.name [ fhir:value "Cccb23classification"] ;
+  fhir:Library.title [ fhir:value "Ccc.B23.Classification"] ;
+  fhir:Library.status [ fhir:value "active"] ;
+  fhir:Library.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/library-type" ] ;
+       fhir:Coding.code [ fhir:value "logic-library" ]
+     ]
+  ] ;
+  fhir:Library.date [ fhir:value "2026-11-19T07:52:22+00:00"^^xsd:dateTime] ;
+  fhir:Library.publisher [ fhir:value "World Health Organization (WHO)"] ;
+  fhir:Library.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "World Health Organization (WHO)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ] ;
+  fhir:Library.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ] ;
+  fhir:Library.parameter [
+     fhir:index 0 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-xxxx" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b6.de06" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ParameterDefinition.name [ fhir:value "weight" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 3 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b6.de08-old" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 4 ;
+     fhir:ParameterDefinition.name [ fhir:value "profile weight" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 5 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b6.de08" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 6 ;
+     fhir:ParameterDefinition.name [ fhir:value "estimated weight" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "Quantity" ]
+  ], [
+     fhir:index 7 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-07" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 8 ;
+     fhir:ParameterDefinition.name [ fhir:value "severe pneumonia or very severe disease" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 9 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de04" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 10 ;
+     fhir:ParameterDefinition.name [ fhir:value "the client has severe pneumonia or very severe disease with low oxygen saturation (spo2 < 90%)" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 11 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de05" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 12 ;
+     fhir:ParameterDefinition.name [ fhir:value "the client has severe pneumonia or very severe disease with wheezing" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 13 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de08" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 14 ;
+     fhir:ParameterDefinition.name [ fhir:value "measles in last 3 months" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 15 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-14" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 16 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-19" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 17 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-23-30" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 18 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-24-32" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 19 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-30" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 20 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-31" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 21 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-32" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 22 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-33" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 23 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-01" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 24 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-05" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 25 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-06" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 26 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-07" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 27 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-09" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 28 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-73" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 29 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-74-76" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 30 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-74" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 31 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-75" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 32 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-76" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 33 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-11-12" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 34 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-11" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 35 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-12" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 36 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de32a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 37 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-79" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 38 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-34" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 39 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-03" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 40 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de26a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 41 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-26" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 42 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-16-66" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 43 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-16-67a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 44 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-67a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 45 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-16-67" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 46 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-67" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 47 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-16" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 48 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-66" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 49 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-69-70" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 50 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-69" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 51 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-68-17" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 52 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-68" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 53 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-17" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 54 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-71" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 55 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-109" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 56 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-110" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 57 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-111" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 58 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-80" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 59 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-83" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 60 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de36" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 61 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-81" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 62 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-82" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 63 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-88" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 64 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-90" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 65 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de43a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 66 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-91" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 67 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-93" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 68 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de46a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 69 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de46" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 70 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-95" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 71 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de48" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 72 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de48a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 73 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-98" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 74 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de50" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 75 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de50a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 76 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-99" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 77 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de52a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 78 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-100" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 79 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de53a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 80 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-102" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 81 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de55" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 82 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-103" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 83 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-104" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 84 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de57a" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 85 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de57b" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 86 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de57c" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 87 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-105" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 88 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-106" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 89 ;
+     fhir:ParameterDefinition.name [ fhir:value "Ccc.b23.de60" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 90 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-g-cl1-108" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 91 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-28" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 92 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-33" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 93 ;
+     fhir:ParameterDefinition.name [ fhir:value "dl-i-cl1-34" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:Library.content [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "ig-loader-Cccb23classification.cql" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://smart.who.int/ccc/Library/Cccb23classification.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,384 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://smart.who.int/ccc/Questionnaire/Ccc.b22.fluidtest> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Ccc.b22.fluidtest"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire Ccc.b22.fluidtest</b></p><a name=\"Ccc.b22.fluidtest\"> </a><a name=\"hcCcc.b22.fluidtest\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/sdc/STU4/StructureDefinition-sdc-questionnaire.html\">SDC Base Questionnaire</a></p></div><b>Structure</b><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Other attributes of the item\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> Ccc.B22.FluidTest</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">https://smart.who.int/ccc/Questionnaire/Ccc.b22.fluidtest#0.1.0</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.DS\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>DS</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Danger Signs</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B7.DE09\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B7.DE09</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Not able to drink or breastfeed</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B7.DE10\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B7.DE10</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Vomiting Everything</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" id=\"item.Ccc.B22.DE08\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B22.DE08</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Oral Fluid Test Results</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Options: <a href=\"#opt-item.Ccc.B22.DE08\">5 options</a></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" id=\"item.Ccc.B22.DE08-help\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-display.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"display\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / Ccc.B22.DE08 / </span>Ccc.B22.DE08-help</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">If a child is unconscious do not try to carry out an oral fluid test (Exact wording &lt;span class=\"caps\"&gt;TBC&lt;/span&gt;) &amp;#8211; Pop Up&lt;/p&gt;\n\n	&lt;p&gt;If a breastfeeding assessment and an Oral Fluid test is recommended for a child that is only breastfed then a pop up is required to ensure that the health care worker observes the signs for both and provides results for both tests. &lt;/p&gt;\n\n	&lt;p&gt;Oral Fluid Test&lt;br /&gt;\nIf it is not possible to perform an oral fluid test, the health care worker should assume that the child is vomiting everything&lt;br /&gt;\nFor a child under 6 months the health care worker can offer for the mother to breastfeed instead of receiving fluids&lt;/p&gt;\n\n	&lt;p&gt;Caution: Do not force fluids into an unconscious child , it can be dangerous. The fluid can cause them to choke or the fluid can go into their lungs. &lt;/p&gt;\n\n	&lt;p&gt;Pop up box to be made available with instructions on how to carry out an oral fluid test.&lt;br /&gt;\nAdditional information &lt;span class=\"caps\"&gt;TBC&lt;/span&gt;</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display\">display</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE14\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B22.DE14</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">null</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Options: <a href=\"#opt-item.Ccc.B22.DE14\">1 option</a></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE14a\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B22.DE14a</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Completely Unable to Drink or Vomits Immediately / Everything</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE15\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B22.DE15</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Has the Child had anything to drink today?</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-choiceorientation.html\" title=\"Orientation: horizontal \"><img src=\"icon-qi-horizontal.png\" alt=\"\"/></a><img src=\"icon-qi-horizontal.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.Ccc.B22.DE16\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>Ccc.B22.DE16</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">How did the child last drink</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">Options: <a href=\"#opt-item.Ccc.B22.DE16\">5 options</a></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" id=\"item.timestamp\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-datetime.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"dateTime\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">Ccc.B22.FluidTest / </span>timestamp</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">null</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/extension-questionnaire-hidden.html\" title=\"Is a hidden item\"><img src=\"icon-qi-hidden.png\" alt=\"\"/></a><img src=\"icon-qi-hidden.png\" alt=\"\"/></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr><td colspan=\"6\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name=\"opt-item.Ccc.B22.DE08\"> </a><p><b>Answer options for Ccc.B22.DE08 </b></p><ul><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE09 (\"Completely Unable to Drink\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE10 (\"Vomits Immediately / Everything\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE11 (\"Drinks Poorly\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE12 (\"Drinks Eagerly / Thirstily\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE13 (\"Drinks Normally\")</li></ul><a name=\"opt-item.Ccc.B22.DE14\"> </a><p><b>Answer options for Ccc.B22.DE14 </b></p><ul><li style=\"font-size: 11px\">null#Ccc.B22.DE14 (\"Unable to Perform Oral Fluid Test\")</li></ul><a name=\"opt-item.Ccc.B22.DE16\"> </a><p><b>Answer options for Ccc.B22.DE16 </b></p><ul><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE09 (\"Completely Unable to Drink\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE10 (\"Vomits Immediately / Everything\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE11 (\"Drinks Poorly\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE12 (\"Drinks Eagerly / Thirstily\")</li><li style=\"font-size: 11px\">https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes#Ccc.B22.DE13 (\"Drinks Normally\")</li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "shareable" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "computable" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability" ] ;
+     fhir:Extension.valueCode [ fhir:value "publishable" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel" ] ;
+     fhir:Extension.valueCode [ fhir:value "structured" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "https://smart.who.int/ccc/StructureMap/Ccc.b22.fluidtest" ;
+       fhir:link <https://smart.who.int/ccc/StructureMap/Ccc.b22.fluidtest>
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/cqf-library" ] ;
+     fhir:Extension.valueCanonical [
+       fhir:value "https://smart.who.int/ccc/Library/Cccb22fluidtest" ;
+       fhir:link <https://smart.who.int/ccc/Library/Cccb22fluidtest>
+     ]
+  ] ;
+  fhir:Questionnaire.url [ fhir:value "https://smart.who.int/ccc/Questionnaire/Ccc.b22.fluidtest"] ;
+  fhir:Questionnaire.version [ fhir:value "0.1.0"] ;
+  fhir:Questionnaire.name [ fhir:value "Ccc.B22.FluidTest"] ;
+  fhir:Questionnaire.title [ fhir:value "Ccc.B22.FluidTest"] ;
+  fhir:Questionnaire.status [ fhir:value "active"] ;
+  fhir:Questionnaire.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient" ;
+     fhir:index 0
+  ] ;
+  fhir:Questionnaire.date [ fhir:value "2026-11-19T07:57:29+00:00"^^xsd:dateTime] ;
+  fhir:Questionnaire.publisher [ fhir:value "World Health Organization (WHO)"] ;
+  fhir:Questionnaire.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "World Health Organization (WHO)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ] ;
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ] ;
+  fhir:Questionnaire.item [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "ds" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "DS" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Danger Signs" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Ccc.b7.de09" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B7.DE09" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Not able to drink or breastfeed" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Ccc.b7.de10" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B7.DE10" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Vomiting Everything" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE14').answer.first().empty() and ( %resource.repeat(item).where(linkId='oftrp').answer.empty()  or %resource.repeat(item).where(linkId='oftrp').answer.first().value=true )" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE08" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Oral Fluid Test Results" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE09" ] ;
+         fhir:Coding.display [ fhir:value "Completely Unable to Drink" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE10" ] ;
+         fhir:Coding.display [ fhir:value "Vomits Immediately / Everything" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE11" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Poorly" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE12" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Eagerly / Thirstily" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE13" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Normally" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.item [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ] ;
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0 ;
+             fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ] ;
+             fhir:Coding.code [ fhir:value "help" ]
+           ]
+         ]
+       ] ;
+       fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE08-help" ] ;
+       fhir:Questionnaire.item.text [ fhir:value "If a child is unconscious do not try to carry out an oral fluid test (Exact wording <span class=\"caps\">TBC</span>) &#8211; Pop Up</p>\n\n	<p>If a breastfeeding assessment and an Oral Fluid test is recommended for a child that is only breastfed then a pop up is required to ensure that the health care worker observes the signs for both and provides results for both tests. </p>\n\n	<p>Oral Fluid Test<br />\nIf it is not possible to perform an oral fluid test, the health care worker should assume that the child is vomiting everything<br />\nFor a child under 6 months the health care worker can offer for the mother to breastfeed instead of receiving fluids</p>\n\n	<p>Caution: Do not force fluids into an unconscious child , it can be dangerous. The fluid can cause them to choke or the fluid can go into their lungs. </p>\n\n	<p>Pop up box to be made available with instructions on how to carry out an oral fluid test.<br />\nAdditional information <span class=\"caps\">TBC</span>" ] ;
+       fhir:Questionnaire.item.type [ fhir:value "display" ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/questionnaire-item-control" ] ;
+           fhir:Coding.code [ fhir:value "check-box" ] ;
+           fhir:Coding.display [ fhir:value "Check-box" ]
+         ] ;
+         fhir:CodeableConcept.text [ fhir:value "Check-box" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE08').answer.first().empty()" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE14" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "true"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE14" ] ;
+         fhir:Coding.display [ fhir:value "Unable to Perform Oral Fluid Test" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B7.DE09').answer.first().value = true or %resource.repeat(item).where(linkId='Ccc.B7.DE10').answer.first().value =  true" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE14').answer.first().exists() and (%resource.repeat(item).where(linkId='DS').answer.first().value = true  or %resource.repeat(item).where(linkId='Ccc.B22.DE08').answer.where(value.code='Ccc.B22.DE09').exists() or %resource.repeat(item).where(linkId='Ccc.B22.DE08').answer.where(value.code='Ccc.B22.DE10').exists() )" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE14a" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Completely Unable to Drink or Vomits Immediately / Everything" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation" ] ;
+       fhir:Extension.valueCode [ fhir:value "horizontal" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE14').answer.first().value = true and %resource.repeat(item).where(linkId='Ccc.B7.DE09').answer.first().value= false and %resource.repeat(item).where(linkId='Ccc.B7.DE10').answer.first().value = false" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE15" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "Has the Child had anything to drink today?" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 7 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "%resource.repeat(item).where(linkId='Ccc.B22.DE15').answer.first().value = true" ]
+       ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "Ccc.B22.DE16" ] ;
+     fhir:Questionnaire.item.text [ fhir:value "How did the child last drink" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "choice" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.repeats [ fhir:value "false"^^xsd:boolean ] ;
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE09" ] ;
+         fhir:Coding.display [ fhir:value "Completely Unable to Drink" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE10" ] ;
+         fhir:Coding.display [ fhir:value "Vomits Immediately / Everything" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE11" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Poorly" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE12" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Eagerly / Thirstily" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:Questionnaire.item.answerOption.valueCoding [
+         fhir:Coding.system [ fhir:value "https://smart.who.int/ccc/CodeSystem/Ccc-custom-codes" ] ;
+         fhir:Coding.code [ fhir:value "Ccc.B22.DE13" ] ;
+         fhir:Coding.display [ fhir:value "Drinks Normally" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression" ] ;
+       fhir:Extension.valueExpression [
+         fhir:Expression.language [ fhir:value "text/fhirpath" ] ;
+         fhir:Expression.expression [ fhir:value "now()" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden" ] ;
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ] ;
+     fhir:Questionnaire.item.linkId [ fhir:value "timestamp" ] ;
+     fhir:Questionnaire.item.type [ fhir:value "dateTime" ] ;
+     fhir:Questionnaire.item.required [ fhir:value "false"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://smart.who.int/ccc/Questionnaire/Ccc.b22.fluidtest.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

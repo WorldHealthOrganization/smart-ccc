@@ -1,0 +1,86 @@
+{
+  "resourceType": "Library",
+  "id": "Cccbase",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception parsing generated Narrative (see /tmp/liquid-28265b7f-709a-4c6d-a7e1-4255f1b14edd.html): Unable to Parse HTML - node 'System.Code' has unexpected content ' ' (last text = ', nbdays Integer):\n      Last([Observation: idlist ] O\n        where  O.status in { 'final', 'amended', 'corrected'}\n        and (difference in days between O.issued and Today()) ' at line 404 column 64</b></p></div>"
+  },
+  "url": "https://smart.who.int/ccc/Library/Cccbase",
+  "version": "0.1.0",
+  "name": "Cccbase",
+  "title": "CccBase",
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2026-11-19T07:57:29+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "name": "World Health Organization (WHO)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://fhir.org/guides/who/anc-cds/Library/FHIRHelpers"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "encounterid",
+      "use": "in",
+      "type": "string"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "type": "Patient",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "type": "Encounter",
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Encounter"
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-Cccbase.cql",
+      "contentType": "text/cql",
+      "url": "Library-Cccbase.cql"
+    }
+  ]
+}

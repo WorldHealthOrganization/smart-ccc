@@ -1,0 +1,375 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://smart.who.int/ccc/Library/Ccctreatment> a fhir:Library ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Ccctreatment"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Ccc.Treatment</td>\n        </tr>\n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">Ccctreatment</td>\n        </tr>\n        \n\n        \n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"Library-Ccctreatment.html\">Ccc.Treatment</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\">\n                <b>\n                    \n                        Official\n                    \n                </b>\n            </th>\n            <td style=\"padding-left: 4px;\">\n                \n                <p style=\"margin-bottom: 5px;\">\n                    <span>Ccc.treatment</span>\n                </p>\n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://hl7.org/fhir/R4/valueset-library-type.html\">http://hl7.org/fhir/ValueSet/library-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>logic-library</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2026-11-19 07:52:22+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">World Health Organization (WHO)</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Jurisdiction: </b></th>\n            <td style=\"padding-left: 4px;\">001</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n          <th scope=\"row\"><b>Parameters: </b></th>\n          <td style=\"padding-left: 4px;\">\n            <table class=\"grid-dict\">\n              <tr><th><b>Name</b></th><th><b>Type</b></th><th><b>Min</b></th><th><b>Max</b></th><th><b>In/Out</b></th></tr>\n              \n                <tr><th>ageinmonths</th><th>integer</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de01</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de02</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de03</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de04</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de05</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de06</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de07</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de08</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de09</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de10</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de11</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de12</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de13</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de14</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de15</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de16</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de17</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de18</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de19</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de20</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de21</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de22</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de23</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de24</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de25</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de42</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de43</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de44</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de26</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de27</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de28</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de29</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de30</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de31</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de32</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de33</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de34</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de35</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de36</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de37</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de38</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de39</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de40</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de41</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de45</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de46</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de47</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de48</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de49</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de50</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de51</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de52</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de53</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de54</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de55</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de56</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de57</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de58</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de59</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n                <tr><th>load-Ccc.c10.it.de60</th><th>boolean</th><th/><th/><th>Out</th></tr>\n              \n            </table>\n          </td>\n        </tr>\n        \n\n        \n\n        \n        \n        \n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:Library.url [ fhir:value "https://smart.who.int/ccc/Library/Ccctreatment"] ;
+  fhir:Library.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.value [ fhir:value "Ccc.treatment" ]
+  ] ;
+  fhir:Library.version [ fhir:value "0.1.0"] ;
+  fhir:Library.name [ fhir:value "Ccctreatment"] ;
+  fhir:Library.title [ fhir:value "Ccc.Treatment"] ;
+  fhir:Library.status [ fhir:value "active"] ;
+  fhir:Library.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/library-type" ] ;
+       fhir:Coding.code [ fhir:value "logic-library" ]
+     ]
+  ] ;
+  fhir:Library.date [ fhir:value "2026-11-19T07:52:22+00:00"^^xsd:dateTime] ;
+  fhir:Library.publisher [ fhir:value "World Health Organization (WHO)"] ;
+  fhir:Library.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "World Health Organization (WHO)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ] ;
+  fhir:Library.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ] ;
+  fhir:Library.parameter [
+     fhir:index 0 ;
+     fhir:ParameterDefinition.name [ fhir:value "ageinmonths" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "integer" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de01" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 2 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de02" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 3 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de03" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 4 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de04" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 5 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de05" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 6 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de06" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 7 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de07" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 8 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de08" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 9 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de09" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 10 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de10" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 11 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de11" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 12 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de12" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 13 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de13" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 14 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de14" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 15 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de15" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 16 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de16" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 17 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de17" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 18 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de18" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 19 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de19" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 20 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de20" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 21 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de21" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 22 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de22" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 23 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de23" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 24 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de24" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 25 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de25" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 26 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de42" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 27 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de43" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 28 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de44" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 29 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de26" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 30 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de27" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 31 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de28" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 32 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de29" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 33 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de30" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 34 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de31" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 35 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de32" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 36 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de33" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 37 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de34" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 38 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de35" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 39 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de36" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 40 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de37" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 41 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de38" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 42 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de39" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 43 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de40" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 44 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de41" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 45 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de45" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 46 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de46" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 47 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de47" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 48 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de48" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 49 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de49" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 50 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de50" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 51 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de51" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 52 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de52" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 53 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de53" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 54 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de54" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 55 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de55" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 56 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de56" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 57 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de57" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 58 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de58" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 59 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de59" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 60 ;
+     fhir:ParameterDefinition.name [ fhir:value "load-Ccc.c10.it.de60" ] ;
+     fhir:ParameterDefinition.use [ fhir:value "out" ] ;
+     fhir:ParameterDefinition.type [ fhir:value "boolean" ]
+  ] ;
+  fhir:Library.content [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "ig-loader-Ccctreatment.cql" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://smart.who.int/ccc/Library/Ccctreatment.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

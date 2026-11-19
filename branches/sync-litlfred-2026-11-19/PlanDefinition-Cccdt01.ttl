@@ -1,0 +1,390 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://smart.who.int/ccc/PlanDefinition/Cccdt01> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Cccdt01"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">Cccdt01</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-Cccdt01.html\">Cccdt01</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.1.0</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\">\n                <b>\n                    \n                        Official\n                    \n                </b>\n            </th>\n            <td style=\"padding-left: 4px;\">\n                \n                <p style=\"margin-bottom: 5px;\">\n                    <span>Cccdt01</span>\n                </p>\n                \n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Cccdt01</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>eca-rule</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2023-04-11 11:19:20+0000</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">World Health Organization (WHO)</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Jurisdiction: </b></th>\n            <td style=\"padding-left: 4px;\">001</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Libraries: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td><a href=\"Library-Cccdt01.html\">Cccdt01</a></td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Register a child &lt; 5 years\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccca.registration.p.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccca.registration.p|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Register the child in the encounter\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInYears() &lt; 5\n                            \n                            <i>(Cccdt02)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Cccb.registration.e.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Cccb.registration.e|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Evaluate DangerSigns\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInYears() &lt; 5\n                            \n                            <i>(Cccdt04)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b7.lti-dangersigns.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b7.lti-dangersigns|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Determine Basic Anthropometric and others measurement\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInYears() &lt; 5\n                            \n                            <i>(Cccdt03)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b6.measurements.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b6.measurements|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Assess sick child for Symptoms 2 m\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInMonths() &lt; 2\n                            \n                            <i>(Cccdt05)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b18-21.symptoms.2m.m.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.symptoms.2m.m|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Assess sick child for Symptoms 2p\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            clas.\"age &gt;= 2 months to &lt;60 months\"\n                            \n                            <i>(Cccdt06)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b10-14.symptoms.2m.p.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-14.symptoms.2m.p|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Assess sick child for Signs 2 m\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInMonths() &lt; 2\n                            \n                            <i>(Cccdt07)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b18-21.signs.2m.m.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.signs.2m.m|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Assess sick child for Signs 2p\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            clas.\"age &gt;= 2 months to &lt;60 months\"\n                            \n                            <i>(Cccdt08)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b10-16.signs.2m.p.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-16.signs.2m.p|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Propose classification\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            clas.\"age &gt;= 2 months to &lt;60 months\"\n                            \n                            <i>(Cccdt09)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b23.classification.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Do Test\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInYears() &lt; 5\n                            \n                            <i>(Cccdt10)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.b22.assessmentstests.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.b22.assessmentstests|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Provide treatment\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInYears() &lt; 5\n                            \n                            <i>(Cccdt11)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <a href=\"ActivityDefinition-Ccc.treatment.html\">ActivityDefinition[https://smart.who.int/ccc/ActivityDefinition/Ccc.treatment|0.1.0]</a><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> :</b> Propose classification 2m\n                            \n                            <br/>\n                            \n                            \n                            <b>If:</b>\n                            \n                            <i>Applicability:</i>\n                            \n                            AgeInMonths() &lt; 2\n                            \n                            <i>(Cccdt12)</i>\n                            <br/>\n                            \n                            \n                            \n                            \n                            <b>Then:</b> <i>Definition:</i> <code>https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification.2m</code><br/>\n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"
+  ] ;
+  fhir:PlanDefinition.url [ fhir:value "https://smart.who.int/ccc/PlanDefinition/Cccdt01"] ;
+  fhir:PlanDefinition.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.value [ fhir:value "Cccdt01" ]
+  ] ;
+  fhir:PlanDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:PlanDefinition.name [ fhir:value "Cccdt01"] ;
+  fhir:PlanDefinition.title [ fhir:value "Cccdt01"] ;
+  fhir:PlanDefinition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/plan-definition-type" ] ;
+       fhir:Coding.code [ fhir:value "eca-rule" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.status [ fhir:value "active"] ;
+  fhir:PlanDefinition.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:PlanDefinition.date [ fhir:value "2023-04-11T11:19:20+00:00"^^xsd:dateTime] ;
+  fhir:PlanDefinition.publisher [ fhir:value "World Health Organization (WHO)"] ;
+  fhir:PlanDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "World Health Organization (WHO)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ] ;
+  fhir:PlanDefinition.library [
+     fhir:value "https://smart.who.int/ccc/Library/Cccdt01" ;
+     fhir:index 0 ;
+     fhir:link <https://smart.who.int/ccc/Library/Cccdt01>
+  ] ;
+  fhir:PlanDefinition.action [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "Cccdt01" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Register a child < 5 years" ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "registration" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccca.registration.p" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccca.registration.p>
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "Cccdt02" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Register the child in the encounter" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInYears() < 5" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt02" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "history-and-physical" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Cccb.registration.e" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Cccb.registration.e>
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "Cccdt04" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Evaluate DangerSigns" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInYears() < 5" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt04" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT0" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "triage" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b7.lti-dangersigns" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b7.lti-dangersigns>
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.id [ fhir:value "Cccdt03" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Determine Basic Anthropometric and others measurement" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInYears() < 5" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt03" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT04" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "record-and-report" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b6.measurements" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b6.measurements>
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.id [ fhir:value "Cccdt05" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Assess sick child for Symptoms 2 m" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInMonths() < 2" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt05" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT03" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "guideline-based-care" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.symptoms.2m.m" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.symptoms.2m.m>
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Element.id [ fhir:value "Cccdt06" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Assess sick child for Symptoms 2p" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "clas.\"age >= 2 months to <60 months\"" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt06" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT03" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "guideline-based-care" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-14.symptoms.2m.p" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-14.symptoms.2m.p>
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Element.id [ fhir:value "Cccdt07" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Assess sick child for Signs 2 m" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInMonths() < 2" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt07" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT05" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "guideline-based-care" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.signs.2m.m" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b18-21.signs.2m.m>
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Element.id [ fhir:value "Cccdt08" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Assess sick child for Signs 2p" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "clas.\"age >= 2 months to <60 months\"" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt08" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT06" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "guideline-based-care" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-16.signs.2m.p" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b10-16.signs.2m.p>
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:Element.id [ fhir:value "Cccdt09" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Propose classification" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "clas.\"age >= 2 months to <60 months\"" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt09" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT10" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "determine-diagnosis" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification>
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Element.id [ fhir:value "Cccdt10" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Do Test" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInYears() < 5" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt10" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT07" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT08" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b22.assessmentstests" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b22.assessmentstests>
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:Element.id [ fhir:value "Cccdt11" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Provide treatment" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInYears() < 5" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt11" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.relatedAction [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT12" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ], [
+       fhir:index 1 ;
+       fhir:PlanDefinition.action.relatedAction.actionId [ fhir:value "CccDT09" ] ;
+       fhir:PlanDefinition.action.relatedAction.relationship [ fhir:value "after" ]
+     ] ;
+     fhir:PlanDefinition.action.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process" ] ;
+         fhir:Coding.code [ fhir:value "provide-counseling" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.treatment" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.treatment>
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:Element.id [ fhir:value "Cccdt12" ] ;
+     fhir:PlanDefinition.action.description [ fhir:value "Propose classification 2m" ] ;
+     fhir:PlanDefinition.action.condition [
+       fhir:index 0 ;
+       fhir:PlanDefinition.action.condition.kind [ fhir:value "applicability" ] ;
+       fhir:PlanDefinition.action.condition.expression [
+         fhir:Expression.description [ fhir:value "AgeInMonths() < 2" ] ;
+         fhir:Expression.language [ fhir:value "text/cql-identifier" ] ;
+         fhir:Expression.expression [ fhir:value "Cccdt12" ]
+       ]
+     ] ;
+     fhir:PlanDefinition.action.definitionCanonical [
+       fhir:value "https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification.2m" ;
+       fhir:link <https://smart.who.int/ccc/ActivityDefinition/Ccc.b23.classification.2m>
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://smart.who.int/ccc/PlanDefinition/Cccdt01.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

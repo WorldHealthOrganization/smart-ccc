@@ -1,0 +1,146 @@
+# Ccc.Z.Score - WHO FHIR Implementation Guide (IG): Integrated Management of Childhood Illness (IMCI) in emergencies v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Ccc.Z.Score**
+
+## Library: Ccc.Z.Score 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://smart.who.int/ccc/Library/Ccczscore | *Version*:0.1.0 |
+| Active as of 2026-11-19 | *Computable Name*:Ccczscore |
+| *Other Identifiers:*CccZScore (use: official) | |
+
+**Exception parsing generated Narrative (see /tmp/liquid-8606058a-2436-451f-ba65-013fd6d8a459.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/* @author: Patrick Delcroix @description: This library is part of the project EmCare */ library emcarezscore version '1.0.1.rc12.build.156' using FHIR version '4.0.1' include FHIRHelpers version '4.0.1' called FHIRHelpers include emcarebase version '1.0.1.rc12.build.156' called Base include WeightForAge version '1.0.0' called wfa include WeightForLength version '1.0.0' called wfl include WeightForHeight version '1.0.0' called wfh //codesystem "EmCare" : 'https://fhir.dk.swisstph-mis.ch/matchbox/fhir/CodeSystem/emcare-custom-codes' //code "Weight": 'EmCare.B6.DE06' from "EmCare" display 'Weight' //code "Estimated Weight": 'EmCare.B6.DE08' from "EmCare" display 'Estimated Weight' //code "MUAC": 'EmCare.B6.DE17' from "EmCare" display 'MUAC' //code "Length": 'EmCare.B6.DE12' from "EmCare" display 'Length' //code "Height": 'EmCare.B6.DE09' from "EmCare" display 'Height' parameter "encounterid" String context Patient define "Weight": Base.coding('EmCare.B6.DE06') define "Estimated Weight": Base.coding('EmCare.B6.DE08') define "MUAC": Base.coding('EmCare.B6.DE17') define "Length": Base.coding('EmCare.B6.DE12') define "Height": Base.coding('EmCare.B6.DE09') define "Visually assess": Base.coding('EmCare.B6.DE18') define "Underweight": Base.coding('EmCare.B6.DE20') define "Severely Underweight": Base.coding('EmCare.B6.DE21') /* pastweight : Previous Weight*/ define "pastweight": if AgeInMonths()' at line 300 column 22**
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Library",
+  "id" : "Ccczscore",
+  "url" : "https://smart.who.int/ccc/Library/Ccczscore",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "CccZScore"
+  }],
+  "version" : "0.1.0",
+  "name" : "Ccczscore",
+  "title" : "Ccc.Z.Score",
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/library-type",
+      "code" : "logic-library"
+    }]
+  },
+  "date" : "2026-11-19T07:52:22+00:00",
+  "publisher" : "World Health Organization (WHO)",
+  "contact" : [{
+    "name" : "World Health Organization (WHO)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  },
+  {
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "relatedArtifact" : [{
+    "type" : "depends-on",
+    "resource" : "http://fhir.org/guides/who/anc-cds/Library/FHIRHelpers"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://smart.who.int/ccc/Library/Cccbase"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://smart.who.int/ccc/Library/weightforage"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://smart.who.int/ccc/Library/anthrobase"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://smart.who.int/ccc/Library/weightforlength"
+  },
+  {
+    "type" : "depends-on",
+    "resource" : "https://smart.who.int/ccc/Library/weightforheight"
+  }],
+  "parameter" : [{
+    "name" : "encounter",
+    "use" : "in",
+    "type" : "Encounter"
+  },
+  {
+    "name" : "pastweight",
+    "use" : "out",
+    "type" : "decimal"
+  },
+  {
+    "name" : "patientsex",
+    "use" : "out",
+    "type" : "string"
+  },
+  {
+    "name" : "ageatpastweight",
+    "use" : "out",
+    "type" : "integer"
+  },
+  {
+    "name" : "pastweightzscore",
+    "use" : "out",
+    "type" : "decimal"
+  },
+  {
+    "name" : "pastweightactualised",
+    "use" : "out",
+    "type" : "decimal"
+  },
+  {
+    "name" : "WAZ",
+    "use" : "out",
+    "type" : "decimal"
+  }],
+  "dataRequirement" : [{
+    "type" : "Patient",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  {
+    "type" : "Encounter",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+  },
+  {
+    "type" : "Observation",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Observation"],
+    "mustSupport" : ["code", "encounter.reference", "encounter", "value", "status"],
+    "codeFilter" : [{
+      "path" : "code",
+      "code" : [{
+        "code" : "Ccc.B6.DE06"
+      }]
+    }]
+  }],
+  "content" : [{
+    "id" : "ig-loader-Ccczscore.cql",
+    "contentType" : "text/cql",
+    "data" : "LyoKQGF1dGhvcjogUGF0cmljayBEZWxjcm9peApAZGVzY3JpcHRpb246IFRoaXMgbGlicmFyeSBpcyBwYXJ0IG9mIHRoZSBwcm9qZWN0IEVtQ2FyZQoqLwpsaWJyYXJ5IGVtY2FyZXpzY29yZSB2ZXJzaW9uICcxLjAuMS5yYzEyLmJ1aWxkLjE1NicKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScgY2FsbGVkIEZISVJIZWxwZXJzIAppbmNsdWRlIGVtY2FyZWJhc2UgdmVyc2lvbiAnMS4wLjEucmMxMi5idWlsZC4xNTYnIGNhbGxlZCBCYXNlCmluY2x1ZGUgV2VpZ2h0Rm9yQWdlIHZlcnNpb24gJzEuMC4wJyBjYWxsZWQgd2ZhCmluY2x1ZGUgV2VpZ2h0Rm9yTGVuZ3RoIHZlcnNpb24gJzEuMC4wJyBjYWxsZWQgd2ZsCmluY2x1ZGUgV2VpZ2h0Rm9ySGVpZ2h0IHZlcnNpb24gJzEuMC4wJyBjYWxsZWQgd2ZoCgoKCi8vY29kZXN5c3RlbSAiRW1DYXJlIiA6ICdodHRwczovL2ZoaXIuZGsuc3dpc3N0cGgtbWlzLmNoL21hdGNoYm94L2ZoaXIvQ29kZVN5c3RlbS9lbWNhcmUtY3VzdG9tLWNvZGVzJwoKCgovL2NvZGUgIldlaWdodCI6ICdFbUNhcmUuQjYuREUwNicgZnJvbSAiRW1DYXJlIiBkaXNwbGF5ICdXZWlnaHQnCi8vY29kZSAiRXN0aW1hdGVkIFdlaWdodCI6ICdFbUNhcmUuQjYuREUwOCcgZnJvbSAiRW1DYXJlIiBkaXNwbGF5ICdFc3RpbWF0ZWQgV2VpZ2h0JwovL2NvZGUgIk1VQUMiOiAnRW1DYXJlLkI2LkRFMTcnIGZyb20gIkVtQ2FyZSIgZGlzcGxheSAnTVVBQycKLy9jb2RlICJMZW5ndGgiOiAnRW1DYXJlLkI2LkRFMTInIGZyb20gIkVtQ2FyZSIgZGlzcGxheSAnTGVuZ3RoJwovL2NvZGUgIkhlaWdodCI6ICdFbUNhcmUuQjYuREUwOScgZnJvbSAiRW1DYXJlIiBkaXNwbGF5ICdIZWlnaHQnCgpwYXJhbWV0ZXIgImVuY291bnRlcmlkIiBTdHJpbmcKCmNvbnRleHQgUGF0aWVudAoKZGVmaW5lICJXZWlnaHQiOgogIEJhc2UuY29kaW5nKCdFbUNhcmUuQjYuREUwNicpCmRlZmluZSAiRXN0aW1hdGVkIFdlaWdodCI6CiAgQmFzZS5jb2RpbmcoJ0VtQ2FyZS5CNi5ERTA4JykKZGVmaW5lICJNVUFDIjoKICBCYXNlLmNvZGluZygnRW1DYXJlLkI2LkRFMTcnKQpkZWZpbmUgIkxlbmd0aCI6CiAgQmFzZS5jb2RpbmcoJ0VtQ2FyZS5CNi5ERTEyJykKZGVmaW5lICJIZWlnaHQiOgogIEJhc2UuY29kaW5nKCdFbUNhcmUuQjYuREUwOScpCmRlZmluZSAiVmlzdWFsbHkgYXNzZXNzIjoKICBCYXNlLmNvZGluZygnRW1DYXJlLkI2LkRFMTgnKQpkZWZpbmUgIlVuZGVyd2VpZ2h0IjoKICBCYXNlLmNvZGluZygnRW1DYXJlLkI2LkRFMjAnKSAKZGVmaW5lICJTZXZlcmVseSBVbmRlcndlaWdodCI6CiAgQmFzZS5jb2RpbmcoJ0VtQ2FyZS5CNi5ERTIxJykgCgovKiBwYXN0d2VpZ2h0IDogUHJldmlvdXMgV2VpZ2h0Ki8KZGVmaW5lICJwYXN0d2VpZ2h0IjoKICAgIGlmIEFnZUluTW9udGhzKCk8IDQgYW5kIEJhc2UuSGFzT2JzSGlzdG9yeSgiV2VpZ2h0IiwgNjMpIGlzIG5vdCBudWxsIHRoZW4KICAgICAgQmFzZS5IYXNPYnNIaXN0b3J5KCJXZWlnaHQiLCA2MykgIGFzIEZISVIuUXVhbnRpdHkKICAgIGVsc2UgIGlmIEFnZUluTW9udGhzKCk8IDYgYW5kIEJhc2UuSGFzT2JzSGlzdG9yeSgiV2VpZ2h0IiwgOTQpICAgaXMgbm90IG51bGwgdGhlbgogICAgICBCYXNlLkhhc09ic0hpc3RvcnkoIldlaWdodCIsIDk0KSAgYXMgIEZISVIuUXVhbnRpdHkKICAgIGVsc2UgaWYgQWdlSW5Nb250aHMoKTwgNiBhbmQgQmFzZS5IYXNPYnNIaXN0b3J5KCJXZWlnaHQiLCAxMjYpICAgaXMgbm90IG51bGwgdGhlbgogICAgICAgQmFzZS5IYXNPYnNIaXN0b3J5KCJXZWlnaHQiLCAxMjYpICBhcyBGSElSLlF1YW50aXR5CiAgICBlbHNlIGlmIEJhc2UuSGFzT2JzSGlzdG9yeSgiV2VpZ2h0IiwgMjAxKSAgaXMgbm90IG51bGwgdGhlbgogICAgICAgQmFzZS5IYXNPYnNIaXN0b3J5KCJXZWlnaHQiLCAyMDEpICBhcyBGSElSLlF1YW50aXR5CiAgICBlbHNlCiAgICAgIG51bGwKCgovKiBwYXRpZW50c2V4IDogUGF0aWVudCBzZXgqLwpkZWZpbmUgInBhdGllbnRzZXgiOgogICAgaWYgUGF0aWVudC5nZW5kZXIgPSAnZmVtYWxlJyB0aGVuICdmZW1hbGUnIGVsc2UgJ21hbGUnCgovKiBhZ2VhdHBhc3R3ZWlnaHQgOiBBZ2UgYXQgUHJldmlvdXMgV2VpZ2h0Ki8KZGVmaW5lICJhZ2VhdHBhc3R3ZWlnaHQiOgogICAgaWYgInBhc3R3ZWlnaHQiIGlzIG5vdCBudWxsICB0aGVuCiAgICAgIChkaWZmZXJlbmNlIGluIGRheXMgYmV0d2VlbiBQYXRpZW50LmJpcnRoRGF0ZSBhbmQgVG9EYXRlKExhc3QoW09ic2VydmF0aW9uOiJXZWlnaHQiIF0gTyB3aGVyZSAgTy5zdGF0dXMgaW4geyAnZmluYWwnLCAnYW1lbmRlZCcsICdjb3JyZWN0ZWQnfSkuaXNzdWVkKSApICogKCAxLjAgYXMgU3lzdGVtLkRlY2ltYWwgKQogICAgZWxzZQogICAgIG51bGwKCi8qIHBhc3R3ZWlnaHR6c2NvcmUgOiBaLVNjb3JlIGF0IFByZXZpb3VzIFdlaWdodCovCmRlZmluZSAicGFzdHdlaWdodHpzY29yZSI6CiAgICBpZiAicGFzdHdlaWdodCIgaXMgbm90IG51bGwgIHRoZW4KICAgICAgd2ZhLmdlbmVyYXRlWlNjb3JlV2VpZ2h0Rm9yQWdlKCJwYXRpZW50c2V4IiwgImFnZWF0cGFzdHdlaWdodCIgLCAoKGNvbnZlcnQgInBhc3R3ZWlnaHQiIHRvICdrZycpLnZhbHVlICogKCAxLjAgYXMgU3lzdGVtLkRlY2ltYWwpKSkKICAgIGVsc2UKICAgICAgbnVsbAoKLyogcGFzdHdlaWdodGFjdHVhbGlzZWQgOiBXZWlnaHQgZnJvbSAgYXQgUHJldmlvdXMgV2VpZ2h0Ki8KZGVmaW5lICJwYXN0d2VpZ2h0YWN0dWFsaXNlZCI6CiAgICBpZiAicGFzdHdlaWdodHpzY29yZSIgaXMgbm90IG51bGwgdGhlbgogICAgICBTeXN0ZW0uUXVhbnRpdHkgeyB2YWx1ZTogUm91bmQod2ZhLmdlbmVyYXRlV2VpZ2h0RnJvbUFnZSgicGF0aWVudHNleCIsQWdlSW5EYXlzKCkgKiAoIDEuMCBhcyBTeXN0ZW0uRGVjaW1hbCApLCAgInBhc3R3ZWlnaHR6c2NvcmUiICksMiksIHVuaXQ6ICdLZyd9IAogICAgZWxzZSAKICAgICAgIG51bGwKCmRlZmluZSBleGlzdGluZ3dlaWdodDoKICBCYXNlLkdldE9ic1ZhbHVlKCJXZWlnaHQiKQoKZGVmaW5lIGV4aXN0aW5nZXN0aW1uYXRlZHdlaWdodDoKICBpZiBleGlzdGluZ3dlaWdodCBpcyBudWxsIHRoZW4gIAogICAgQmFzZS5HZXRPYnNWYWx1ZSgiRXN0aW1hdGVkIFdlaWdodCIpCiAgZWxzZSAKICAgIG51bGwKCmRlZmluZSBleGlzdGluZ2hlaWdodDoKICBCYXNlLkdldE9ic1ZhbHVlKCJIZWlnaHQiKQoKZGVmaW5lIGV4aXN0aW5nbGVuZ3RoOgogIEJhc2UuR2V0T2JzVmFsdWUoIkxlbmd0aCIpCgpkZWZpbmUgZXhpc3RpbmdtdWFjOgogIEJhc2UuR2V0T2JzVmFsdWUoIk1VQUMiKQoKZGVmaW5lIGV4aXN0aW5ndmlzdWFsOgogIEJhc2UuR2V0T2JzVmFsdWUoIlZpc3VhbGx5IGFzc2VzcyIpCgpkZWZpbmUgenNjb3JlZnJvbW11YWM6CiAgaWYgZXhpc3RpbmdtdWFjIGlzIG51bGwgdGhlbiAwLjAKICBlbHNlIGlmIGV4aXN0aW5nbXVhYyA8IDExNSAnbW5tJyB0aGVuIC0zLjAKICBlbHNlIGlmIGV4aXN0aW5nbXVhYyA8IDEyNSAnbW5tJyB0aGVuIC0yLjAKICBlbHNlIDAuMAoKZGVmaW5lIGVzdGltYXRlZHdlaWdodDoKICBjYXNlICAKICB3aGVuIGV4aXN0aW5nd2VpZ2h0IGlzIG5vdCBudWxsIHRoZW4gbnVsbAogIHdoZW4gZXhpc3Rpbmdlc3RpbW5hdGVkd2VpZ2h0IGlzIG5vdCBudWxsIHRoZW4gZXhpc3Rpbmdlc3RpbW5hdGVkd2VpZ2h0CiAgd2hlbiBwYXN0d2VpZ2h0YWN0dWFsaXNlZCBpcyBub3QgbnVsbCB0aGVuIHBhc3R3ZWlnaHRhY3R1YWxpc2VkCiAgd2hlbiBBZ2VJbk1vbnRocygpPjI0IGFuZCBleGlzdGluZ2hlaWdodCB0aGVuIHdlaWdodGZyb21oZWlnaHQKICB3aGVuIEFnZUluTW9udGhzKCk8PTI0IGFuZCBleGlzdGluZ2xlbmd0aCB0aGVuIHdlaWdodGZyb21sZW5ndGgKICBlbHNlIHdlaWdodGZyb21hZ2UKICBlbmQKCmRlZmluZSB6c2NvcmVmcm9tdmlzdWFsOgogICAgaWYgZXhpc3Rpbmd2aXN1YWwgaXMgbm90IG51bGwgdGhlbgogICAgICBjYXNlICAKICAgICAgICB3aGVuIGV4aXN0aW5ndmlzdWFsIH4gIlNldmVyZWx5IFVuZGVyd2VpZ2h0IiB0aGVuIC0zLjAKICAgICAgICB3aGVuIGV4aXN0aW5ndmlzdWFsIH4gIlVuZGVyd2VpZ2h0IiB0aGVuIC0yLjAKICAgICAgICBlbHNlIDAuMAogICAgICBlbmQKICAgIGVsc2UgIG51bGwKCgpkZWZpbmUgd2VpZ2h0ZnJvbWxlbmd0aDoKICAgIFN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOiBSb3VuZCh3ZmwuZ2VuZXJhdGVXZWlnaHRGcm9tTGVuZ3RoKCJwYXRpZW50c2V4IiwoY29udmVydCBleGlzdGluZ2xlbmd0aCB0byAnY20nKS52YWx1ZSAqICggMS4wIGFzIFN5c3RlbS5EZWNpbWFsICksIHpzY29yZWZyb21tdWFjKSwyKSwgdW5pdDogJ0tnJ30KCmRlZmluZSB3ZWlnaHRmcm9taGVpZ2h0OgogICAgU3lzdGVtLlF1YW50aXR5IHsgdmFsdWU6Um91bmQod2ZoLmdlbmVyYXRlV2VpZ2h0RnJvbUhlaWdodCgicGF0aWVudHNleCIsKGNvbnZlcnQgZXhpc3RpbmdoZWlnaHQgdG8gJ2NtJykudmFsdWUgKiAoIDEuMCBhcyBTeXN0ZW0uRGVjaW1hbCApLCB6c2NvcmVmcm9tbXVhYyksMiksIHVuaXQ6ICdLZyd9CgpkZWZpbmUgd2VpZ2h0ZnJvbWFnZToKICAgIFN5c3RlbS5RdWFudGl0eSB7IHZhbHVlOlJvdW5kKHdmYS5nZW5lcmF0ZVdlaWdodEZyb21BZ2UoInBhdGllbnRzZXgiLEFnZUluRGF5cygpICogKCAxLjAgYXMgU3lzdGVtLkRlY2ltYWwgKSwgenNjb3JlZnJvbW11YWMpLDIpLCB1bml0OiAnS2cnfQovKgooY29udmVydCBCYXNlLkhhc09icygiV2VpZ2h0IikgdG8gJ0tnJykgZG9lcyBub3Qgd29yaywgc28gbGV0J3MgYXNzdW1lIHRoZSB3ZWlnaHQgaXMgaW4gS2cKKi8KZGVmaW5lICJXQVoiOgogICAgaWYgZXhpc3Rpbmd3ZWlnaHQgaXMgbm90IG51bGwgdGhlbgogICAgICAgICB3ZmEuZ2VuZXJhdGVaU2NvcmVXZWlnaHRGb3JBZ2UoInBhdGllbnRzZXgiLCAiYWdlYXRwYXN0d2VpZ2h0IiAsICggQmFzZS5IYXNPYnMoIldlaWdodCIpLnZhbHVlICogKCAxLjAgYXMgU3lzdGVtLkRlY2ltYWwgKSkpCiAgICBlbHNlIGlmIGV4aXN0aW5nbXVhYyBpcyBub3QgbnVsbCB0aGVuCiAgICAgICAgenNjb3JlZnJvbW11YWMKICAgIGVsc2UgaWYgZXhpc3Rpbmd2aXN1YWwgdGhlbgogICAgICAgIHpzY29yZWZyb212aXN1YWwKICAgIGVsc2UgbnVsbAoK"
+  }]
+}
+
+```

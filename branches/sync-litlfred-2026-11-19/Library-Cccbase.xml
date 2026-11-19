@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Library xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="Cccbase" />
+  <text>
+    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-83e08082-2a2a-49ef-bc48-afc244ce4e3a.html): Unable to Parse HTML - node 'System.Code' has unexpected content ' ' (last text = ', nbdays Integer):
+      Last([Observation: idlist ] O
+        where  O.status in { 'final', 'amended', 'corrected'}
+        and (difference in days between O.issued and Today()) ' at line 404 column 64</html:b></html:p></html:div>
+  </text>
+  <url value="https://smart.who.int/ccc/Library/Cccbase" />
+  <version value="0.1.0" />
+  <name value="Cccbase" />
+  <title value="CccBase" />
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/library-type" />
+      <code value="logic-library" />
+    </coding>
+  </type>
+  <date value="2026-11-19T07:52:22+00:00" />
+  <publisher value="World Health Organization (WHO)" />
+  <contact>
+    <name value="World Health Organization (WHO)" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.who.int" />
+    </telecom>
+  </contact>
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.who.int" />
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+      <code value="001" />
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="http://fhir.org/guides/who/anc-cds/Library/FHIRHelpers" />
+  </relatedArtifact>
+  <parameter>
+    <name value="encounterid" />
+    <use value="in" />
+    <type value="string" />
+  </parameter>
+  <dataRequirement>
+    <type value="Patient" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  </dataRequirement>
+  <content id="ig-loader-Cccbase.cql">
+    <contentType value="text/cql" />
+    <url value="Library-Cccbase.cql" /></content>
+</Library>

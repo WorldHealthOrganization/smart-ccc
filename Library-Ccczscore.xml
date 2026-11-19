@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Library xmlns="http://hl7.org/fhir" xmlns:html="http://www.w3.org/1999/xhtml">
+  <id value="Ccczscore" />
+  <text>
+    <status value="extensions" /><html:div><html:p><html:b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-a383c869-e84e-4912-b629-5e2959778bf3.html): Unable to Parse HTML - node 'code' has unexpected content ' ' (last text = '/*
+@author: Patrick Delcroix
+@description: This library is part of the project EmCare
+*/
+library emcarezscore version '1.0.1.rc12.build.156'
+using FHIR version '4.0.1'
+include FHIRHelpers version '4.0.1' called FHIRHelpers 
+include emcarebase version '1.0.1.rc12.build.156' called Base
+include WeightForAge version '1.0.0' called wfa
+include WeightForLength version '1.0.0' called wfl
+include WeightForHeight version '1.0.0' called wfh
+
+
+
+//codesystem "EmCare" : 'https://fhir.dk.swisstph-mis.ch/matchbox/fhir/CodeSystem/emcare-custom-codes'
+
+
+
+//code "Weight": 'EmCare.B6.DE06' from "EmCare" display 'Weight'
+//code "Estimated Weight": 'EmCare.B6.DE08' from "EmCare" display 'Estimated Weight'
+//code "MUAC": 'EmCare.B6.DE17' from "EmCare" display 'MUAC'
+//code "Length": 'EmCare.B6.DE12' from "EmCare" display 'Length'
+//code "Height": 'EmCare.B6.DE09' from "EmCare" display 'Height'
+
+parameter "encounterid" String
+
+context Patient
+
+define "Weight":
+  Base.coding('EmCare.B6.DE06')
+define "Estimated Weight":
+  Base.coding('EmCare.B6.DE08')
+define "MUAC":
+  Base.coding('EmCare.B6.DE17')
+define "Length":
+  Base.coding('EmCare.B6.DE12')
+define "Height":
+  Base.coding('EmCare.B6.DE09')
+define "Visually assess":
+  Base.coding('EmCare.B6.DE18')
+define "Underweight":
+  Base.coding('EmCare.B6.DE20') 
+define "Severely Underweight":
+  Base.coding('EmCare.B6.DE21') 
+
+/* pastweight : Previous Weight*/
+define "pastweight":
+    if AgeInMonths()' at line 300 column 22</html:b></html:p></html:div>
+  </text>
+  <url value="https://smart.who.int/ccc/Library/Ccczscore" />
+  <identifier>
+    <use value="official" />
+    <value value="CccZScore" />
+  </identifier>
+  <version value="0.1.0" />
+  <name value="Ccczscore" />
+  <title value="Ccc.Z.Score" />
+  <status value="active" />
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/library-type" />
+      <code value="logic-library" />
+    </coding>
+  </type>
+  <date value="2026-11-19T07:57:29+00:00" />
+  <publisher value="World Health Organization (WHO)" />
+  <contact>
+    <name value="World Health Organization (WHO)" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.who.int" />
+    </telecom>
+  </contact>
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.who.int" />
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm" />
+      <code value="001" />
+    </coding>
+  </jurisdiction>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="http://fhir.org/guides/who/anc-cds/Library/FHIRHelpers" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="https://smart.who.int/ccc/Library/Cccbase" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="https://smart.who.int/ccc/Library/weightforage" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="https://smart.who.int/ccc/Library/anthrobase" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="https://smart.who.int/ccc/Library/weightforlength" />
+  </relatedArtifact>
+  <relatedArtifact>
+    <type value="depends-on" />
+    <resource value="https://smart.who.int/ccc/Library/weightforheight" />
+  </relatedArtifact>
+  <parameter>
+    <name value="encounter" />
+    <use value="in" />
+    <type value="Encounter" />
+  </parameter>
+  <parameter>
+    <name value="pastweight" />
+    <use value="out" />
+    <type value="decimal" />
+  </parameter>
+  <parameter>
+    <name value="patientsex" />
+    <use value="out" />
+    <type value="string" />
+  </parameter>
+  <parameter>
+    <name value="ageatpastweight" />
+    <use value="out" />
+    <type value="integer" />
+  </parameter>
+  <parameter>
+    <name value="pastweightzscore" />
+    <use value="out" />
+    <type value="decimal" />
+  </parameter>
+  <parameter>
+    <name value="pastweightactualised" />
+    <use value="out" />
+    <type value="decimal" />
+  </parameter>
+  <parameter>
+    <name value="WAZ" />
+    <use value="out" />
+    <type value="decimal" />
+  </parameter>
+  <dataRequirement>
+    <type value="Patient" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Encounter" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  </dataRequirement>
+  <dataRequirement>
+    <type value="Observation" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+    <mustSupport value="code" />
+    <mustSupport value="encounter.reference" />
+    <mustSupport value="encounter" />
+    <mustSupport value="value" />
+    <mustSupport value="status" />
+    <codeFilter>
+      <path value="code" />
+      <code>
+        <code value="Ccc.B6.DE06" />
+      </code>
+    </codeFilter>
+  </dataRequirement>
+  <content id="ig-loader-Ccczscore.cql">
+    <contentType value="text/cql" />
+    <url value="Library-Ccczscore.cql" /></content>
+</Library>
